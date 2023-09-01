@@ -1,0 +1,14 @@
+.title{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.heading{
+    border-bottom: 7px solid rgb(155, 150, 150);
+}
+.sub-button{
+    background-color: rgb(241, 181, 69);
+    float: right;
+    width: 500px;
+}

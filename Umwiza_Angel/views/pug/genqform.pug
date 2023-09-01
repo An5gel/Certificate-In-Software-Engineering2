@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/bootstrap/css')
+  link(rel='stylesheet' href='/css/genqform.css')
+  title Document
+.container
+  .row
+    form(name='kycform' action='#' onsubmit="return Validate();" method='POST')
+      .row.g-3
+        .title
+          h1 GENQ KYC FORM
+        .heading
+          h2 BIO-DATA
+        .col-6
+          input.form-control(name='firstname' type='text' placeholder='First name' aria-label='First name')
+          span#firstnameerror
+        .col-6
+          input.form-control(name='lastname' type='text' placeholder='Last name' aria-label='Last name')
+          span#lastnameerror
+        .col-6
+          input.form-control(name='date' type='text' placeholder='Date Of Birth(DD/MM/YYYY)' aria-label='date')
+          span#dateerror
+        .col-6
+          select#inputState.form-select(name='gender' type='text' )
+            option(selected='')  
+            option(value='female') Female
+            option(value='male') Male
+          span#genderError
+        .heading
+          h2 Location
+        .col-6
+          input.form-control(name='country' type='text' placeholder='Country' aria-label='Country')
+          span#countryerror
+        .col-6
+          input.form-control(name='state' type='text' placeholder='State/District' aria-label='State')
+          span#stateerror
+        .col-6
+          input.form-control(name='town' type='text' placeholder='Town' aria-label='town')
+          span#townerror
+        .col-6
+          input.form-control(name='zipcode' type='text' placeholder='Zip-code' aria-label='zip-code')
+          span#zip-codeerror
+        .heading
+          h2 Contact
+        .col-6
+          input.form-control(name='phonenumber1' type='ext' placeholder='Phone number1' aria-label='phone number1')
+          span#phonenumber1error
+        .col-6
+          input.form-control(name='phonenumber2' type='text' placeholder='Phone number2' aria-label='phone number2')
+          span#phonenumber2error
+        .col-12
+          input.form-control(name='email' type='text' placeholder='email' aria-label='email')
+          span#emailerror
+        .col-12
+          button.btn.sub-button  Submit
+script(src='/bootstrap/js')
+script(src='/js/formvalidation.js')

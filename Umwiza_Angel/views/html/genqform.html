@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/bootstrap/css">
+    <link rel="stylesheet" href="../../public/css/genqform.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form name="kycform" action="#" method="POST"> 
+                <div class="row g-3">
+                    <div class="title"><h1>GENQ KYC FORM</h1> </div>
+                    <div class="heading"><h2>BIO-DATA</h2> </div>
+                    <div class="col-6">
+                      <input name="firstname"type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      <span id="firstnameerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="lastname" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                      <span id="lastnameerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="date" type="text" class="form-control" placeholder="Date Of Birth(DD/MM/YYYY)" aria-label="date">
+                      <span id="dateerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="gender" type="text" class="form-control" placeholder="Gender" aria-label="Gender">
+                      <span id="gendererror"></span>
+                    </div>
+                    <div class="heading"><h2>Location</h2> </div>
+                    <div class="col-6">
+                      <input name="country" type="text" class="form-control" placeholder="Country" aria-label="Country">
+                      <span id="countryerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="state" type="text" class="form-control" placeholder="State/District" aria-label="State">
+                      <span id="stateerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="town" type="text" class="form-control" placeholder="Town" aria-label="town">
+                      <span id="townerror"></span>
+                    </div>
+                    <div class="col-6">
+                      <input name="zip-code" type="text" class="form-control" placeholder="Zip-code" aria-label="zip-code">
+                      <span id="zip-codeerror"></span>
+                    </div>
+                    <div class="heading"><h2>Contact</h2> </div>
+                    <div class="col-6">
+                      <input name="phonenumber1" type="ext" class="form-control" placeholder="Phone number1" aria-label="phone number1">
+                      <span id="phonenumber1error"></span>
+                    </div>
+                    <div class="col-6">
+                      <input  name="phonenumber2" type="text" class="form-control" placeholder="Phone number2" aria-label="phone number2">
+                      <span id="phonenumber2error"></span>
+                    </div>
+                    <div class="col-12">
+                      <input  name="email" type="text" class="form-control" placeholder="email" aria-label="email">
+                      <span id="emailerror"></span>
+                    </div>
+                    <div class="col-12">
+                     <button class="btn sub-button"> Submit</button>
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </div>
+   <script src="../../public/bootstrap/js"></script> 
+   <script src="../../public/js/formvalidation.js"></script> 
+</body>
+</html>
